@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "CPStringTools.h"
 #import "ViewControllerComponent1.h"
+#import <MGJRouter/MGJRouter.h>
 
 @interface ViewController ()
 
@@ -22,18 +23,25 @@
 }
 
 - (IBAction)btnClick:(id)sender {
-    CPStringTools *cp = [CPStringTools new];
-    [cp m2];
+    [MGJRouter openURL:@"CTB://UserCenter/PushMainVC"
+          withUserInfo:@{@"navigationVC" : self.navigationController}
+            completion:nil];
 }
 
 - (IBAction)nextViewClick:(id)sender {
+    [MGJRouter openURL:@"CTB://HomePage/PushMainVC"
+          withUserInfo:@{@"navigationVC" : self.navigationController}
+            completion:nil];
+}
+
+- (IBAction)localViewClick:(id)sender {
     ViewControllerComponent1 *vc = [ViewControllerComponent1 new];
     [self presentViewController:vc animated:YES completion:nil];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)baseComClick:(id)sender {
+    CPStringTools *cp = [CPStringTools new];
+    [cp m2];
 }
 
 

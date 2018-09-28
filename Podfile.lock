@@ -3,14 +3,28 @@ PODS:
   - ComponentTool1 (0.1.5):
     - ComponentTool1/Party (= 0.1.5)
   - ComponentTool1/Party (0.1.5)
+  - HomePageModule (1.1):
+    - MGJRouter
+  - MGJRouter (0.10.0)
+  - UserCenterModule (1.2):
+    - MGJRouter
 
 DEPENDENCIES:
   - Component1 (from `./Libs/Component1/Component12.podspec`)
   - ComponentTool1 (~> 0.1.5)
+  - HomePageModule (~> 1.1)
+  - MGJRouter
+  - UserCenterModule (~> 1.2)
 
 SPEC REPOS:
+  https://git.coding.net/LiuXiaoZhuang/HomePageModuleSpec.git:
+    - HomePageModule
+  https://git.coding.net/LiuXiaoZhuang/UserCenterModuleSpec.git:
+    - UserCenterModule
   https://gitee.com/xiaoliixang/ZHSpecs.git:
     - ComponentTool1
+  https://github.com/CocoaPods/Specs.git:
+    - MGJRouter
 
 EXTERNAL SOURCES:
   Component1:
@@ -19,7 +33,10 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Component1: 0becb50049f2d56ab98754ab8a4530653a49f487
   ComponentTool1: e842a7ab45b0a334bb3e050668d04f34cfe93604
+  HomePageModule: 203ab07925cc934a8c22b2fc6808a0eb673fbf69
+  MGJRouter: 15d94541eb2cc81eff7d577337288feb7ae9575f
+  UserCenterModule: 6e3f9d55c49316cb60f404b47558e347d993f588
 
-PODFILE CHECKSUM: 234993bb6baab27c5253b070d918f51bc4ea964a
+PODFILE CHECKSUM: 42ad12eb0e09e25b29e3775fc53dd14f199f8992
 
 COCOAPODS: 1.5.0
