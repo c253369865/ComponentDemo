@@ -1,0 +1,25 @@
+PODS:
+  - Component1 (0.1.0)
+  - ComponentTool1 (0.1.5):
+    - ComponentTool1/Party (= 0.1.5)
+  - ComponentTool1/Party (0.1.5)
+
+DEPENDENCIES:
+  - Component1 (from `./Libs/Component1/Component12.podspec`)
+  - ComponentTool1 (~> 0.1.5)
+
+SPEC REPOS:
+  https://gitee.com/xiaoliixang/ZHSpecs.git:
+    - ComponentTool1
+
+EXTERNAL SOURCES:
+  Component1:
+    :path: "./Libs/Component1/Component12.podspec"
+
+SPEC CHECKSUMS:
+  Component1: 0becb50049f2d56ab98754ab8a4530653a49f487
+  ComponentTool1: e842a7ab45b0a334bb3e050668d04f34cfe93604
+
+PODFILE CHECKSUM: 234993bb6baab27c5253b070d918f51bc4ea964a
+
+COCOAPODS: 1.5.0
